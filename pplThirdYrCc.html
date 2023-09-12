@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="accordi.css">
+    <title>People</title>
+    <style>
+          .sidePanel,.myDiv{
+            height: 450px;
+        }
+        .footer{
+            margin-top: 450px;
+        }
+         .accordion{
+            color: #4000a1;
+            background-color: #edc32b;
+            text-decoration: none;
+            margin-top: 10px;margin-left: 10px;margin-right: 10px;
+            height: 40px;
+            font-size: 20px;
+            border-radius: 0px;
+            padding: 5px;
+            border: 2px solid blue;
+            
+
+        }
+        #stquote1 a{
+            text-decoration: none;
+        }
+        #acc2,#acc3{
+            margin-top: 0px;
+        }
+        #acc2,#acN1,#acN4,#acN5{
+            border-top: 0px;border-bottom: 0px;
+        }
+        table{
+            width: 550px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="navBar" >
+        <a href="home.html"><div class="tf"><img src="logos.PNG" width="120" height="80"></div></a>
+
+
+        <div class="tm"><a href="about.html" >About Us</a></div>
+        <div class="tm"><a href="academics.html" >Academics</a></div>
+        <div class="tm"><a href="people.html" >People</a></div>
+        <div class="tm"><a href="achieve.html" >Achievements</a></div>
+        <div class="tm"><a href="contact.html" >Contact Us</a></div>
+        
+        
+        <a href="logon.html"><div class="login">Login/Register</div></a>
+        
+    </div>
+    
+    <div class="sidePanel" id="divi">
+                   
+        
+
+        <button class="accordion" id="acc1">First Year</button>
+            <div class="panel" id="pn1">
+                <div class="accNav" id="acN1"><a href="#.html">Students</a></div>
+                <div class="accNav" id="acN2"><a href="pplFirstYrCc.html">Class Coordinators</a></div>
+            </div>
+        
+        <button class="accordion" id="acc2">Second Year</button>
+            <div class="panel" id="pn2">
+                <div class="accNav" id="acN3"><a href="pplSecondYr.html">Students</a></div>
+                <div class="accNav" id="acN4"><a href="pplSecondYrCc.html">Class Coordinators</a></div>
+            </div>
+        <button class="accordion" id="acc3">Third Year</button>
+            <div class="panel" id="pn3">
+                <div class="accNav" id="acN5"><a href="pplThirdYr.html">Students</a></div>
+                <div class="accNav" id="acN6"><a href="pplThirdYrCc.html">Class Coordinators</a></div>
+            </div>
+        <script >
+    
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+        </script>
+
+    </div>
+
+    <div class="myDiv"  id="divi">
+        
+        <h2 align="center" style="margin-left: 5px; font-family: Georgia, 'Times New Roman', Times, serif;">
+            Third Year</h2>
+            <p style="font-size:30px;margin-left: 5px"></p>
+            <table align="center" border="1px" style="font-size:20px;border: 1px solid black;" cellpadding="5px" cellspacing="0px">
+                <tr>
+                    <th>Year of Batch</th>
+                    <td>2020-2024</td>
+                </tr>
+                <tr>
+                    <th>Branch</th>
+                    <td>Information Technology</td>
+                </tr>
+                <tr>
+                    <th>Number of Students</th>
+                    <td>48</td>
+                </tr>
+                <tr>
+                    <th>Regulation</th>
+                    <td>2017</td>
+                </tr>
+  
+
+            </table>
+            
+            <hr>
+            <h2 align="center ">Class Coordinators</h2>
+            <table align="center" border="1px" style="font-size:20px;border: 1px solid black;width: 75%;" cellpadding="5px" cellspacing="0px">
+                <tr>
+                    <th>Faculty Name</th>
+                    <th>Contact Number</th>
+                    <th>Email Id</th>
+                </tr>
+                <tr>
+                    <td>Sheelavathi</td>
+                    <td>9089322452</td>
+                    <td>sheelait@saranathan.ac.in</td>
+                </tr>
+                <tr>
+                    <td>Regarajan alias Muralidharan</td>
+                    <td>9089322452</td>
+                    <td>rengit@saranathan.ac.in</td>
+                </tr>
+            </table>
+            
+    </div>
+
+    <div class="footer" >
+        <p style="margin-top:0px;padding-top: 15px;">Copyright 2022</p><hr>
+        <p>All &#169; rights owned by IT'24</p>
+    </div>
+</body>
+</html>

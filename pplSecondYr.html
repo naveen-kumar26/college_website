@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="accordi.css">
+    <title>People</title>
+    <style>
+          .sidePanel,.myDiv{
+            height: 1700px;
+        }
+        .footer{
+            margin-top: 1700px;
+        }
+         .accordion{
+            color: #4000a1;
+            background-color: #edc32b;
+            text-decoration: none;
+            margin-top: 10px;margin-left: 10px;margin-right: 10px;
+            height: 40px;
+            font-size: 20px;
+            border-radius: 0px;
+            padding: 5px;
+            border: 2px solid blue;
+            
+
+        }
+        #stquote1 a{
+            text-decoration: none;
+        }
+        #acc2,#acc3{
+            margin-top: 0px;
+        }
+        #acc2,#acN1,#acN4,#acN5{
+            border-top: 0px;border-bottom: 0px;
+        }
+        table{
+            width: 550px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="navBar" >
+        <a href="home.html"><div class="tf"><img src="logos.PNG" width="120" height="80"></div></a>
+
+
+        <div class="tm"><a href="about.html" >About Us</a></div>
+        <div class="tm"><a href="academics.html" >Academics</a></div>
+        <div class="tm"><a href="people.html" >People</a></div>
+        <div class="tm"><a href="achieve.html" >Achievements</a></div>
+        <div class="tm"><a href="contact.html" >Contact Us</a></div>
+        
+        
+        <a href="#"><div class="login">Login/Register</div></a>
+        
+    </div>
+    
+    <div class="sidePanel" id="divi">
+                   
+        
+
+        <button class="accordion" id="acc1">First Year</button>
+            <div class="panel" id="pn1">
+                <div class="accNav" id="acN1"><a href="#.html">Students</a></div>
+                <div class="accNav" id="acN2"><a href="pplFirstYrCc.html">Class Coordinators</a></div>
+            </div>
+
+        <button class="accordion" id="acc2">Second Year</button>
+            <div class="panel" id="pn2">
+                <div class="accNav" id="acN3"><a href="pplSecondYr.html">Students</a></div>
+                <div class="accNav" id="acN4"><a href="pplSecondYrCc.html">Class Coordinators</a></div>
+            </div>
+        <button class="accordion" id="acc3">Third Year</button>
+            <div class="panel" id="pn3">
+                <div class="accNav" id="acN5"><a href="pplThirdYr.html">Students</a></div>
+                <div class="accNav" id="acN6"><a href="pplThirdYrCc.html">Class Coordinators</a></div>
+            </div>
+        <script >
+    
+                var acc = document.getElementsByClassName("accordion");
+                var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+        </script>
+
+    </div>
+
+    <div class="myDiv"  id="divi">
+        
+        <h2 align="center" style="margin-left: 5px; font-family: Georgia, 'Times New Roman', Times, serif;">
+            Second Year</h2>
+            <p style="font-size:30px;margin-left: 5px"></p>
+            <table align="center" border="1px" style="font-size:20px;border: 1px solid black;" cellpadding="5px" cellspacing="0px">
+                <tr>
+                    <th>Year of Batch</th>
+                    <td>2021-2025</td>
+                </tr>
+                <tr>
+                    <th>Branch</th>
+                    <td>Information Technology</td>
+                </tr>
+                <tr>
+                    <th>Number of Students</th>
+                    <td>64</td>
+                </tr>
+                <tr>
+                    <th>Regulation</th>
+                    <td>2021</td>
+                </tr>
+  
+
+            </table>
+            <hr>
+            <h2 align="center ">Students Namelist</h2>
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn" onclick="filterSelection('by')"> boys</button>
+                <button class="btn" onclick="filterSelection('grl')"> girls</button>
+                <button class="btn" onclick="filterSelection('lat')"> lateral</button>
+                <button class="btn" onclick="filterSelection('tran')"> transfer</button>
+                <button class="btn" onclick="filterSelection('hos')"> Hostellers</button>
+                
+            </div>
+            <br>
+    <table border="1px" align="center" width="50%" cellspacing="0px">
+        <tr class="filterDiv by grl lat tran hos">
+            <th>Batch No.</th>
+            <th>Register No.</th>
+            <th>Name</th>
+        </tr>
+        <tr class="filterDiv grl">
+            
+            <td>234001</td>
+            <td>813820205001</td>
+            <td>Almas Begum</td>
+        </tr>
+        <tr class="filterDiv by">
+            <td>234002</td>
+            <td>813820205001</td>
+            <td>Arul Samuel</td>
+        </tr>
+        <tr class="filterDiv by">
+            <td>234003</td>
+            <td>813820205001</td>
+            <td>Arun Radhakrishnan</td>
+        </tr>
+        <tr class="filterDiv by">
+            <td>234004</td>
+            <td>813820205001</td>
+            <td>Avinash</td>
+        </tr>
+        <tr class="filterDiv by hos">
+            <td>234005</td>
+            <td>813820205001</td>
+            <td>Balamurugan</td>
+        </tr>
+        <tr class="filterDiv by hos">
+            <td>234006</td>
+            <td>813820205006</td>
+            <td>Balapavithran</td>
+        </tr>
+        <tr class="filterDiv by">
+            <td>234007</td>
+            <td>813820205007</td>
+            <td>Chibi Narayanan</td>
+        </tr>
+        <tr class="filterDiv grl">
+            <td>234008</td>
+            <td>813820205008</td>
+            <td>Divye Dharshny</td>
+        </tr>
+        <tr class="filterDiv by">
+            <td>234009</td>
+            <td>813820205009</td>
+            <td>Goutham</td>
+        </tr>
+        <tr class="filterDiv grl">
+            <td>234010</td>
+            <td>813820205022</td>
+            <td>Nithyasri</td>
+        </tr>
+        <tr class="filterDiv grl hos">
+            <td>234011</td>
+            <td>813820205010</td>
+            <td>Illakiya</td>
+        </tr>
+        <tr class="filterDiv by hos">
+            <td>234012</td>
+            <td>813820205011</td>
+            <td>Kamalnath</td>
+        </tr>
+        <tr class="filterDiv by hos">
+            <td>234013</td>
+            <td>813820205012</td>
+            <td>Kaviselvan</td>
+        </tr>
+        <tr class="filterDiv by">
+            <td>234014</td>
+            <td>813820205013</td>
+            <td>Krishna kumar</td>
+        </tr>
+        <tr class="filterDiv grl">
+            <td>234015</td>
+            <td>813820205014</td>
+            <td>Letitia</td>
+        </tr>
+        <tr class="filterDiv by hos">
+            <td>234016</td>
+            <td>813820205015</td>
+            <td>Lingeshwaran</td>
+        </tr>
+        <tr class="filterDiv by">
+            <td>234017</td>
+            <td>813820205016</td>
+            <td>Logeshwaran</td>
+        </tr>
+        <tr class="filterDiv by hos">
+            <td>234018</td>
+            <td>813820205017</td>
+            <td>Lokesh</td>
+        </tr>
+        <tr class="filterDiv grl">
+            <td>234019</td>
+            <td>813820205018</td>
+            <td>Mehaboob Nisha</td>
+        </tr>
+        <tr class="filterDiv by hos">
+            <td>234020</td>
+            <td>813820205019</td>
+            <td>Manibharathi</td>
+        </tr>
+        <tr class="filterDiv by">
+            <td>234021</td>
+            <td>813820205020</td>
+            <td>Naveen Kumar</td>
+        </tr>
+        <tr class="filterDiv grl">
+            <td>234022</td>
+            <td>813820205021</td>
+            <td>Niranjana</td>
+        </tr>
+        <tr class="filterDiv grl">
+            <td>234023</td>
+            <td>813820205024</td>
+            <td>Parkavi</td>
+        </tr>
+        <tr class="filterDiv grl">
+            <td>234024</td>
+            <td>813820205025</td>
+            <td>Pavethra</td>
+        </tr>
+        <tr class="filterDiv by">
+            <td>234025</td>
+            <td>813820205026</td>
+            <td>Poonkuran</td>
+        </tr>
+        <tr class="filterDiv by">
+            <td>234026</td>
+            <td>813820205023</td>
+            <td>Pragadeesh Ram</td>
+        </tr>
+        <tr class="filterDiv grl">
+            <td>234027</td>
+            <td>813820205027</td>
+            <td>Priyadarshini</td>
+        </tr>
+        <tr class="filterDiv grl">
+            <td>234028</td>
+            <td>813820205028</td>
+            <td>Priyadharshni</td>
+        </tr>
+        <tr class="filterDiv by hos">
+            <td>234029</td>
+            <td>813820205029</td>
+            <td>Rahul</td>
+        </tr>
+        <tr class="filterDiv grl">
+            <td>234030</td>
+            <td>813820205030</td>
+            <td>Rajalakshmi</td>
+        </tr>
+        <tr class="filterDiv by">
+            <td>234031</td>
+            <td>813820205031</td>
+            <td>Rajkumar</td>
+        </tr>
+        <tr class="filterDiv grl">
+            <td>234032</td>
+            <td>813820205032</td>
+            <td>Ritheka</td>
+        </tr>
+        <tr class="filterDiv by">
+            <td>234033</td>
+            <td>813820205033</td>
+            <td>Roheeth Kumar</td>
+        </tr>
+        <tr class="filterDiv grl hos">
+            <td>234034</td>
+            <td>813820205034</td>
+            <td>Roshini</td>
+        </tr>
+        <tr class="filterDiv grl">
+            <td>234035</td>
+            <td>813820205036</td>
+            <td>Shamabanu</td>
+        </tr>
+        <tr class="filterDiv grl">
+            <td>234036</td>
+            <td>813820205037</td>
+            <td>Shameena Banu</td>
+        </tr>
+        <tr class="filterDiv grl">
+            <td>234037</td>
+            <td>813820205038</td>
+            <td>Shanumuga Priya</td>
+        </tr>
+        <tr class="filterDiv by">
+            <td>234038</td>
+            <td>813820205039</td>
+            <td>Sivanesh</td>
+        </tr>
+        <tr class="filterDiv by">
+            <td>234040</td>
+            <td>813820205041</td>
+            <td>Srinath</td>
+        </tr>
+        <tr class="filterDiv grl">
+            <td>234041</td>
+            <td>813820205042</td>
+            <td>Subpraja</td>
+        </tr>
+        <tr class="filterDiv by hos">
+            <td>234042</td>
+            <td>813820205043</td>
+            <td>Sudhan Kumar</td>
+        </tr>
+        <tr class="filterDiv grl">
+            <td>234043</td>
+            <td>813820205044</td>
+            <td>Swetha</td>
+        </tr>
+        <tr class="filterDiv grl hos">
+            <td>234044</td>
+            <td>813820205045</td>
+            <td>Uma</td>
+        </tr>
+        <tr class="filterDiv by">
+            <td>234045</td>
+            <td>813820205046</td>
+            <td>Venkatraman</td>
+        </tr>
+        <tr class="filterDiv by hos">
+            <td>234046</td>
+            <td>813820205047</td>
+            <td>Vigneshwaran</td>
+        </tr>
+        <tr class="filterDiv by">
+            <td>234047</td>
+            <td>813820205035</td>
+            <td>Samuvel</td>
+        </tr>
+        <tr class="filterDiv by lat">
+            <td>234048</td>
+            <td>813820205301</td>
+            <td>Imran Ahmed</td>
+        </tr>
+        <tr class="filterDiv by lat">
+            <td>234049</td>
+            <td>8138202050302</td>
+            <td>Praveen Kumar</td>
+        </tr>
+        <tr class="filterDiv by tran hos">
+            <td>234050</td>
+            <td>8138202050</td>
+            <td>Ramajeyam</td>
+        </tr>
+    </table>
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("filterDiv");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+        
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+        }
+        
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+        
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+        </script>
+    </div>
+
+    <div class="footer" >
+        <p style="margin-top:0px;padding-top: 15px;">Copyright 2022</p><hr>
+        <p>All &#169; rights owned by IT'24</p>
+    </div>
+</body>
+</html>

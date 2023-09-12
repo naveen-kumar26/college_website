@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quote.css">
+    <title>Home</title>
+    </head>
+            <style>
+                body{
+                   margin: 0;
+                }
+                .navBar{
+                    background-color: #fff78b;
+                    color: #FFDD67;
+                    
+                    height: 100px;
+                   
+
+                    
+                }
+
+                .navBar a{
+                    text-decoration: none;
+                }
+               
+                .tf{
+                    display: inline-block;
+                    color: #edc32b;
+                    margin-top : 0px;
+                    margin-right: 20px;
+                    margin-left: 8px;
+                    font-size: 40px;
+                    padding: 5px;
+                    
+                    
+                    
+                    
+                }
+                .tm{
+                    display: inline-block;
+                    text-decoration: none;
+                    font-size: 20px;
+                    color: #6601ff;
+                    margin-top: 0px;
+                    margin-right: 10px;
+                    padding-left: 20px;
+                    
+                }
+                .tm a:hover{
+                    background-color: #1e004c;
+                    color: #edc32b;
+                    border-radius: 2px;
+                    padding: 5px;
+                }
+                .login{
+                    display: inline-block;background-color: #ffeb14;
+                    color: #4a18ff;
+                    margin-top : 45px;margin-right: 8px;
+                    font-size: 20px;
+                    float : right;
+                    padding: 5px;
+                    border : 3px solid #4a18ff;
+                    border-radius: 3px;
+                    
+                    
+                }
+                .sidePanel{
+                    font-size: 20px;
+                    background-color: #e8d6ff ;color: #5300ce;
+                    float : left;
+                    width: 100%;height: 1000px;
+                    
+                }
+                .myDiv{
+            
+                    background-color: #a6b9ff ;
+                    font-size: 20px;
+                    
+                    
+                   
+                }
+                #stquote{
+                    color: #4000a1;
+                    background-color: #edc32b;
+                    margin-top: 10px;margin-left: 10px;margin-right: 10px;
+                    height: auto;
+                    font-family: Brush Script MT, Brush Script Std, cursive;
+                    font-size: 40px;
+                    border-left : 20px solid #001f9d;;
+                    border-radius: 0px;
+                    padding: 20px;
+                    font-weight: bolder; 
+
+
+                }
+                
+                .footer{
+                    background-color: #c4c4c4;
+                    clear: both;
+                    text-align: center;font-size: 20px;
+                    
+                }
+                
+            </style>
+    </head>
+    <body>
+           
+        <div class="navBar" >
+            <a href="home.html"><div class="tf"><img src="logos.PNG" width="120" height="80"></div></a>
+
+            <div class="tm"><a href="about.html" >About Us</a></div>
+            <div class="tm"><a href="academics.html" >Academics</a></div>
+            <div class="tm"><a href="people.html" >People</a></div>
+            <div class="tm"><a href="achieve.html" >Achievements</a></div>
+            <div class="tm"><a href="contact.html" >Contact Us</a></div>
+                            
+            <a href="logon.html"><div class="login">Login/Register</div></a>
+                    
+        </div>
+
+        <div class="sidePanel" id="divi">
+                               
+            <div class="slideshow-container">
+
+                <div class="mySlides">
+                    <p >"Education is the most powerful weapon which you can use to change the world"
+                    <br><br><span style="color: #d023d9;">- Nelson Mandela</span></p>
+                </div>
+                        
+                <div class="mySlides">
+                    <p   >"The best way to predict your future is to create it."
+                    <br><br><span style="color: #d023d9;">- Abraham Lincoln</span></p>
+                </div>
+                        
+                <div class="mySlides">
+                    <p   >"I have not failed, but found 1000 ways to not make a light bulb."
+                        <br><br><span style="color: #d023d9;">- Thomas Alva Edison</span></p>
+                </div>
+
+                <div class="mySlides">
+                    <p   >"Scientists study the world as it is, engineers create the world that never has been."
+                        <br><br><span style="color: #d023d9;">- Theodore von Karman</span></p>
+                </div>
+
+                <div class="mySlides">
+                    <p   >"The mind is not a vessel to be filled but a fire to be ignited."
+                        <br><br><span style="color: #d023d9;">- Plutarch</span></p>
+                </div>
+
+                <div class="mySlides">
+                    <p   >"The mind is not a vessel to be filled but a fire to be ignited."
+                        <br><br><span style="color: #d023d9;">- Plutarch</span></p>
+                </div>
+
+                <div class="mySlides">
+                    <p   >"Learning is never done without errors and defeat"
+                        <br><br><span style="color: #d023d9;">- Vladimir Lenin</span></p>
+                </div>
+
+                <div class="mySlides">
+                    <p   >"I find that the harder I work, the more luck I seem to have."
+                        <br><br><span style="color: #d023d9;">- Thomas Jefferson</span></p>
+                </div>
+    
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                        
+            </div>
+            <script>
+                       var slideIndex = 1;
+                            showSlides(slideIndex);
+        
+                            function plusSlides(n) {
+                                showSlides(slideIndex += n);
+                            }
+        
+                            function currentSlide(n) {
+                                showSlides(slideIndex = n);
+                            }
+        
+                            function showSlides(n) {
+                                var i;
+                                var slides = document.getElementsByClassName("mySlides");
+                                if (n > slides.length) {slideIndex = 1}    
+                                if (n < 1) {slideIndex = slides.length}
+                                for (i = 0; i < slides.length; i++) {
+                                    slides[i].style.display = "none";  
+                                }
+        
+                                slides[slideIndex-1].style.display = "block";  
+        
+                            }
+             </script>
+
+            <hr>
+            <p align="center" style="font-size: 45px;font-family: Georgia, 'Times New Roman', Times, serif;">
+                        Welcome To IT'24 !</p>
+            <p align="center"style="font-size:30px">...start your exploration</p>
+        </div>
+
+      
+               
+
+        <div class="footer" >
+            <p style="margin-top:0px;padding-top: 15px;">Copyright 2022</p><hr>
+            <p>All &#169; rights owned by IT'24</p>
+        </div>
+            
+    </body>
+</html>

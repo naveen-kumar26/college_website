@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+ }
+ .navBar{
+     background-color: #fff78b;
+     color: #FFDD67;
+     
+     height: 100px;
+    
+
+     
+ }
+
+ .navBar a{
+     text-decoration: none;
+ }
+
+ .tf{
+     display: inline-block;
+     color: #edc32b;
+     margin-top : 0px;
+     margin-right: 20px;
+     margin-left: 8px;
+     font-size: 40px;
+     padding: 5px;
+     
+     
+     
+     
+ }
+ .tm{
+     display: inline-block;
+     text-decoration: none;
+     font-size: 20px;
+     color: #6601ff;
+     margin-top: 0px;
+     margin-right: 10px;
+     padding-left: 20px;
+     
+ }
+ .tm a:hover{
+     background-color: #1e004c;
+     color: #edc32b;
+     border-radius: 2px;
+     padding: 5px;
+ }
+ .login{
+     display: inline-block;background-color: #ffeb14;
+     color: #4a18ff;
+     margin-top : 45px;margin-right: 8px;
+     font-size: 20px;
+     float : right;
+     padding: 5px;
+     border : 3px solid #4a18ff;
+     border-radius: 3px;
+     
+     
+ }
+
+ .sidePanel,.myDiv{
+    height: 1000px;
+ }
+
+ .sidePanel{
+     font-size: 20px;
+     background-color: #e8d6ff ;color: #5300ce;
+     float: left;
+     width: 17%;
+     
+ }
+ .myDiv{
+
+     background-color: #a6b9ff ;
+     font-size: 20px;
+     position: relative;
+     width: 83%;
+     text-align: justify;
+    float: right;
+ }
+ #stquote{
+     color: #4000a1;
+     background-color: #edc32b;
+     margin-top: 10px;margin-left: 10px;margin-right: 10px;
+     height: auto;
+     font-family: Brush Script MT, Brush Script Std, cursive;
+     font-size: 40px;
+     border-left : 20px solid #001f9d;;
+     border-radius: 0px;
+     padding: 20px;
+     font-weight: bolder; 
+
+
+ }
+ 
+ .footer{
+     background-color: #c4c4c4;
+     text-align: center;font-size: 20px;
+     margin-top: 1000px;
+     margin-bottom: 0px;
+ }
